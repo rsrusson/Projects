@@ -1,0 +1,24 @@
+//First Input
+name = input("Enter your name: ")
+
+weight = int(input("Enter your weight in pounds: "))
+
+height = int(input("Enter your height in inches: "))
+
+BMI = (weight * 703) / (height * height)
+print(BMI)
+print(name + ' is ' + category + '.')
+
+//Second Input
+category = 'Null'
+if BMI > 0:
+    if BMI < 18.5:
+        category = 'Underweight'
+    elif (BMI >= 18.5) and (BMI < 25):
+        category = 'Normal weight'
+    elif (BMI >= 25) and (BMI < 29.9):
+        category = 'Overweight'
+    elif (BMI >= 29.9) and (BMI < 39.9):
+        category = 'Obese'
+    else:
+        category = 'Morbidly Obese'
